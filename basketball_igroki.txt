@@ -1,0 +1,15 @@
+-- Table: public.basketball_igroki
+
+-- DROP TABLE IF EXISTS public.basketball_igroki;
+
+CREATE TABLE IF NOT EXISTS public.basketball_igroki
+(
+    id bigint NOT NULL DEFAULT nextval('basketball_igroki_id_seq'::regclass),
+    plauers text COLLATE pg_catalog."default",
+    CONSTRAINT basketball_igroki_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.basketball_igroki
+    OWNER to postgres;
